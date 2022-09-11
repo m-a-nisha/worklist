@@ -30,7 +30,7 @@ export default function Profile() {
         <div id='profile'>
 
             
-            {/* <div className='profileSection'>
+            <div className='profileSection'>
                
                 <h2 style={{marginBottom:"11px"}}>Welcome to profile section</h2>
                 <h1><i className="fas fa-user-circle"></i></h1>
@@ -66,7 +66,7 @@ export default function Profile() {
                     <h6  data-bs-toggle="modal" data-bs-target="#exampleModal" className="changepassword">Change Password ? <i className="fas fa-lock"></i></h6>
                     <Modal />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

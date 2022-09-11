@@ -20,9 +20,9 @@ export default function Navbar() {
                 <>
                     
                     <div style={{ display: "flex" }} className='end'>
-                        {/* <Link to={`/${state && state._id}`}>
+                        <Link to={`/${state && state._id}`}>
                             <h4><i className="fas fa-user-circle"></i> Profile</h4>
-                        </Link> */}
+                        </Link>
                         <Link to="/">
                             <h4 style={{ color: "black" }}><i className="fas fa-home"></i> Home</h4>
                         </Link>
