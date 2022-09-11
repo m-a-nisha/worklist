@@ -1,0 +1,349 @@
+#Container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 49px;
+  font-family: "Bree Serif", serif;
+}
+
+.heading {
+  position: relative;
+  margin: 25px auto;
+  border-radius: 10px;
+  color: white;
+  text-decoration: wavy;
+  /* line-height: 2pxzz; */
+  word-spacing: 7px;
+  letter-spacing: 1px;
+  font-family: "Lobster Two", cursive;
+  max-width: 25em;
+}
+
+.LoginContainer {
+  position: relative;
+  background: #c9ffbf; 
+  background: linear-gradient(
+    to right,
+    #d6d3d6,
+    #fcfdfd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ width: 38vw;
+  /* width: 100%; */
+  height: auto;
+  /* margin: ; */
+  padding: 10px 25px;
+  margin: 25px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.log {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+.sign {
+  animation: 1s ease-in 0s 1 slideInRight;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-45%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.LoginContainer:hover {
+  box-shadow: 0px 0px 8px rgb(126, 255, 255);
+  transform: rotate(360deg);
+}
+.LoginContainer h2 {
+  text-align: center;
+  text-shadow: 0px 0px 2px rgb(197, 137, 253);
+  margin: 7px 10px 10px 5px;
+  padding: 7px 10px 10px 5px;
+}
+.LoginContainer hr {
+  border-width: 0.1px;
+  box-shadow: 0px 0px 2px rgb(199, 140, 255);
+  border-color: black;
+}
+
+.login {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.login form {
+  width: 100%;
+  padding: 11px 5px;
+  text-align: center;
+}
+.login input {
+  max-width: 96%;
+  width: 100%;
+  margin: 5px 12px 25px 12px;
+  padding: 7px 10px 5px 10px;
+  outline: none;
+  background: transparent;
+  border: navy;
+  border-bottom: 1.2px solid black;
+  box-shadow: 0px 0px 2px rgb(157, 61, 247);
+  color: rgb(8, 8, 8);
+  display: block;
+}
+.login input:focus {
+  box-shadow: 0px 0px 2px rgb(86, 2, 94);
+}
+.login input::placeholder {
+  color: rgb(32, 32, 32);
+  font-size: 0.85em;
+  text-shadow: 0px 0px 2px rgb(197, 136, 255);
+  font-family: "Bree Serif", serif;
+}
+
+.login button {
+  display: flex;
+  justify-content: center;
+  outline: none;
+  /* background: rgb(191,60,117); */
+  background: radial-gradient(
+    circle,
+    rgb(234, 98, 252) 0%,
+    rgb(144, 88, 196) 100%
+  );
+  border: none;
+  padding: 5px 15px;
+  border-radius: 7px;
+  position: relative;
+  margin: auto;
+  color: rgb(249, 252, 252);
+  text-shadow: 0px 0px 2px rgb(39, 38, 38);
+  font-family: "Bree Serif", serif;
+}
+
+.login button:hover {
+  box-shadow: 2px 2px 3px rgb(78, 78, 78);
+}
+
+.navigate {
+  text-align: center;
+  margin: 0px;
+  padding: 1px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 2px rgb(200, 144, 253);
+}
+
+.loginImg {
+  width: 5em;
+  display: inline-block;
+  /* float: initial; */
+  animation: 4s ease-out 1s infinite animate;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  display: block;
+  /* float: right; */
+}
+.loginImg2 {
+  width: 10em;
+  display: inline-block;
+  /* float: initial; */
+  /* animation: 4s ease-out 1s infinite animate; */
+  position: relative;
+  text-align: center;
+  margin: auto;
+  display: block;
+  /* float: right; */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-40deg);
+  }
+}
+
+.heading h1 {
+  font-size: 2.4em;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgb(70, 70, 70);
+}
+
+.heading h3 {
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgb(70, 70, 70);
+}
+
+@media screen and (max-width: 1200px) {
+  .login input {
+    margin: 5px 4px 25px 4px;
+  }
+  .LoginContainer {
+    /* max-width: 35%; */
+    width: 38vw;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .heading h1 {
+    font-size: 1.7em;
+  }
+  .heading h3 {
+    font-size: 0.8em;
+  }
+  .loginImg {
+    width: 4.5em;
+  }
+  .heading {
+    word-spacing: 5.5px;
+    letter-spacing: 0.5px;
+    font-family: "Lobster Two", cursive;
+    /* animation: 1s ease-out 0s 1 slideInRight; */
+    max-width: 17em;
+  }
+  .LoginContainer {
+   width: 40vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .LoginContainer {
+    width: 42vw;
+  }
+}
+
+@media screen and (max-width: 704px) {
+    #Container {
+    margin: 13px 15px;
+    }
+}
+@media screen and (max-width: 625px) {
+    #Container {
+    margin: 13px 15px;
+    }
+     .LoginContainer {
+   width: 42vw;
+  }
+  .login input {
+    margin: 5px 4px 11px 4px;
+  }
+  .navigate {
+    font-size: 0.75em;
+  }
+  .heading h1 {
+    font-size: 1.6em;
+    margin: 2px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .heading h3 {
+    margin: 0px 0px 0px 0px;
+    padding: 4.5px 0px 0px 0px;
+    font-size: 0.45;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .LoginContainer {
+    width: 65vw;
+  }
+  .direction2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .heading h1,
+  h3 {
+    margin: 12px auto;
+    padding: 0px;
+  }
+  .loginImg {
+    width: 2.5em;
+  }
+  .LoginContainer h2 {
+    font-size: 1.3em;
+    margin: 4px 10px 5px 5px;
+    padding: 3px 10px 5px 5px;
+  }
+  .login input {
+    margin: 5px 4px 11px 4px;
+  }
+  .navigate {
+    font-size: 0.75em;
+  }
+  
+}
+
+@media screen and (max-width: 470px) {
+    #Container {
+    margin: 13px 15px;
+  }
+  .heading h1 {
+    font-size: 1.6em;
+    margin: 12px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .heading h3 {
+    margin: 0px 0px 0px 0px;
+    padding: 4.5px 0px 0px 0px;
+    font-size: 0.45;
+  }
+  .loginImg {
+    width: 2.5em;
+  }
+  .LoginContainer {
+    width: 70vw;
+  }
+  .navigate {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #Container {
+    margin: 18px 15px;
+  }
+  .LoginContainer {
+    width: 85vw;
+    padding: 5px;
+  }
+  .login button{
+      font-size: 0.6em;
+  }
+  .login input::placeholder {  
+  font-size: 0.7em; 
+}
+.heading h1 {
+    font-size: 1.45em;
+    margin-top: 10px;
+  }
+  .heading h3 {
+   
+    font-size: 0.37;
+  }
+}

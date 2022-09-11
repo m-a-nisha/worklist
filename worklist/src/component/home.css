@@ -1,0 +1,189 @@
+.homeContainer {
+  min-height: 75vh;
+  position: relative;
+  max-width: 50%;
+  width: 100%;
+  margin: 8px auto;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(96, 144, 248) 0%,
+    rgb(124, 189, 250) 100%
+  );
+  border-radius: 8px;
+  font-family: "Bree Serif", serif;
+  border: 2.5px solid rgb(255, 255, 255);
+}
+
+.home {
+  padding: 5px 12px 10px 12px;
+  margin: auto;
+}
+
+.home input {
+  outline: none;
+  margin: 5px 8px 8px 5px;
+  padding: 9px 10px;
+  border: navy;
+  box-shadow: 0px 0px 5px rgb(1, 170, 255);
+  border-bottom: 2.5px solid rgb(42, 1, 54);
+  color: rgb(8, 8, 8);
+  max-width: 67%;
+  width: 100%;
+}
+.home input:focus {
+  box-shadow: 0px 0px 5px rgb(10, 75, 105);
+}
+
+.home button {
+  outline: none;
+  background-color: rgb(4, 101, 139);
+  border: none;
+  margin-top: 1px;
+  color: antiquewhite;
+  padding: 9px 15px;
+  font-family: "Bree Serif", serif;
+  border-bottom: 2px solid rgb(42, 1, 54);
+}
+.home button:hover {
+  box-shadow: 0px 0px 5px rgb(75, 74, 75);
+}
+
+.home h1,
+form {
+  text-align: center;
+}
+.home h1 {
+  margin: 1px 2px 3px 2px;
+  padding: 3px 2px 3px 2px;
+  font-family: "Lobster Two", cursive;
+  text-shadow: 0px 0px 3px rgb(219, 217, 217);
+  color: rgb(31, 30, 30);
+}
+
+.home form {
+  padding-top: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(59, 59, 59) 0%,
+    rgb(129, 127, 127) 50%,
+    rgb(119, 119, 118) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgb(171, 70, 253) 100%,
+    rgb(190, 119, 248) 0%
+  );
+  background: white;
+}
+
+.home hr {
+  margin: 5px 5px 10px 5px;
+  height: 0.7px;
+  background-color: black;
+  box-shadow: 0px 0px 2px rgb(115, 128, 0);
+  border: none;
+}
+
+.container {
+  /* background-color: rgb(6, 14, 87); */
+  background: rgb(50, 125, 252);
+  background: linear-gradient(
+    0deg,
+    rgb(55, 100, 248) 0%,
+    rgb(105, 186, 253) 100%
+  );
+  position: relative;
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  min-height: 51.5vh;
+  height: 100%;
+  width: auto;
+  border-radius: 8px;
+}
+.container p {
+  position: relative;
+  /* background-color: azure; */
+  margin: 3px 5px 5px 5px;
+  padding: 2px 5px 5px 1px;
+  display: inline;
+}
+
+
+.container div {
+  position: relative;
+  background-color: azure;
+  margin: 3px 5px 5px 5px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+
+.homeBox {
+  min-height: 70vh;
+  height: 100%;
+  width: auto;
+  background: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.taskcontainer {
+  word-wrap: break-word;
+}
+
+.icon {
+  font-weight: bold;
+  float: right;
+  font-size: 0.8em;
+}
+
+.green {
+  color: antiquewhite;
+}
+
+/* ------------Media Query--------- */
+@media screen and (max-width: 900px) {
+  .homeContainer {
+    min-width: 30em;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .homeContainer {
+    /* background:rgb(42, 1, 54); */
+    min-width: 20em;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+  .container p {
+    font-size: 0.82em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homeContainer {
+    /* background:rgb(42, 1, 54); */
+    min-width: 15em;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+  .home input {
+    width: 55%;
+  }
+  .home button {
+    margin-top: 0.5px;
+    padding: 4.5px 7px;
+  }
+  .container p {
+    font-size: 0.7em;
+  }
+  .home input {
+    /* padding: ; */
+    padding: 6px 7px;
+  }
+  .home h1 {
+    font-size: 1.5em;
+  }
+}

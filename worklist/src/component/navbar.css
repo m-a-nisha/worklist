@@ -1,0 +1,116 @@
+.navbar{
+    margin: 0px;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+background: linear-gradient(to right,#93ceff, #eef2f3, #8ec4fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-shadow: 0px 0px 2px rgb(214, 197, 248);
+
+}
+.navbar a{    
+    text-decoration: none;
+    color: black;
+    padding: 5px 8px;
+}
+
+.navbar h4{
+    margin: 0%;
+    padding: 0%;
+    padding: 5px 10px;
+    margin: 6px 5px 2px 5px;
+    font-size: 1.2em;
+}
+.navbar h4:hover{
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.logo{
+    background: linear-gradient(to right, #27a8b9, #1565c0);
+    border-radius: 5px;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 32px;
+    height: 38px;
+    padding: 3px 2px;
+    margin: 5px 3px;
+}
+
+.logout{
+    outline: none;
+    border: none;
+    height: 31px;
+    background-color: rgb(4, 101, 139);
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 2px 15px;
+    border: 2px solid black;
+    box-shadow: 0.5px 0.5px 0.5px rgb(112, 112, 112);
+    font-family: 'Bree Serif', serif;
+    margin: 11px;
+}
+.logout:hover{
+    box-shadow: 2px 2px 3px rgb(61, 60, 60);
+    
+}
+
+.end{
+   position: absolute;
+   display: block;
+   right: 0;
+   margin-right: 30px;
+}
+
+@media screen and (max-width: 510px){
+    .end{
+        margin-right: 0px;
+    }
+    .navbar a{    
+    padding: 5px 3px;
+    }
+    .navbar h4{
+        font-size: 0.85em;
+    }
+    .logout{
+        padding: 0.5px 7px;
+        font-size: 0.85em;
+        height: 25px;
+        /* height: 22; */
+    }
+}
+
+
+@media screen and (max-width: 400px){
+.navbar h4{
+    margin: 0%;
+    padding: 0%;
+    padding: 5px 5px;
+    margin: 2px 5px;
+    font-size: 0.8em;
+}
+.logo img{
+    width: 21px;
+    height: 30px;
+}
+
+}
+
+@media screen and (max-width: 300px){
+    .navbar h4{
+        font-size: 0.75em;
+    }
+    .logout{
+        padding: 0.5px 7px;
+        font-size: 0.75em;
+        height: 25px;
+        /* height: 22; */
+    }
+}

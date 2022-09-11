@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  /* height: 100%; */
+}
+
+body > #root > div {
+  min-height: 100vh;
+    height: 100%;
+    width: auto;
+}
+/* #root > div {
+  height: 100vh;
+} */
+

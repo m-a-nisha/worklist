@@ -1,0 +1,18 @@
+.App{
+    margin: 0px;
+    padding: 0px;
+  
+/* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: rgb(83,26,130); */
+/* background: linear-gradient(111deg, rgba(83,26,130,1) 0%, rgba(59,104,179,1) 50%, rgba(130,69,252,1) 100%); */
+    position: relative;
+    height: 100%;
+    background: rgb(12,230,150);
+background: linear-gradient(90deg, rgb(83, 214, 247) 0%, rgb(3, 119, 197) 35%, rgb(151, 73, 225) 100%);
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
